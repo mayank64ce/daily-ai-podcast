@@ -1,0 +1,99 @@
+(scratchpad)
+tool_code
+# Overall strategy:
+# The goal is to create a natural, engaging, fast-paced, and enthusiastic podcast-style conversation that discusses the provided input content.
+# The conversation should be TTS-optimized.
+# Person1 will be the main summarizer and Person2 will be the questioner/clarifier.
+# The conversation will cover the key points, themes, and structure of the input content.
+# The conversation will follow a clear structure (Introduction, Main Content Summary, Conclusion).
+# The language used will be conversational and TTS-friendly.
+# The conversation should simulate a multi-speaker conversation with overlapping speakers and banter.
+# Filler words such as "um", "uh", "you know" and some stuttering will be used.
+# The conversation will contain TTS-specific markup tags to enhance naturalness (e.g., prosody, rate, pitch).
+# Create distinct voice characteristics for Person1 and Person2.
+# Continuously refer back to the input content, ensuring the conversation stays on topic.
+# Structure:
+# 1. Introduction: Welcome the audience and introduce the topic.
+# 2. Main Content Summary:
+#       a. Discuss Cognition's DeepWiki
+#       b. Cover AI Twitter Recap (Meta's Perception Encoders, Qwen Chat App, Hugging Face and FAL Integration, OpenAI Models, Perplexity Model Updates, vLLM for RLHF, Surya OCR Model)
+#       c. Discuss Frameworks, Tools, and Datasets
+#       d. Cover Agentic Systems and Tool Use
+#       e. Discuss Interpretability and Evaluation
+#       f. Cover AI Ethics and Welfare
+#       g. Discuss Industry and Business
+#       h. Cover ICLR Conference
+#       i. Discuss Transportation and Infrastructure
+#       j. Cover Humor
+#       k. Discuss AI Reddit Recap
+#       l. Discuss Other AI Subreddit Recap
+#       m. Discuss AI Discord Recap
+# 3. Conclusion: Summarize the key takeaways and thank the audience.
+# TTS Optimization:
+# Use prosody tags to adjust the rate, pitch, and volume of speech.
+# Add pauses to create natural breaks in the conversation.
+# Use conversational language and filler words to simulate a natural conversation.
+# Vary sentence length and structure to avoid monotony.
+# Use punctuation strategically to influence delivery.
+# Emotional Tone:
+# Be engaging, fast-paced, and enthusiastic.
+# Use humor and anecdotes to transition between topics.
+# Express excitement about the discussed content.
+# Improvisation Prompts
+# - Person1: Summarize DeepWiki and ask Person2 if they've had a chance to try it out, playing off the claim that its super useful.
+# - Person2: Ask about the most surprising updates in the AI model releases.
+# - Person1: Highlight the advancements in AI interpretability and then ask if it could stop AI from ending all human life.
+# - Person2: Ask about the implications of the increasing divergence between AI and human vision.
+# - Person1: Summarize challenges in the discord communities such as the OpenAI GPT rate limiting problems and general instability of models.
+# - Person2: Ask about what is "The next big thing" coming out of the communities.
+# Voice Characterization
+# - Person1: More measured, authoritative tone, with a slight tendency to explain things in detail. Use slightly slower speech rate.
+# - Person2: More energetic, quick-witted, and interjecting. Use slightly faster speech rate.
+)
+<Person1> "Welcome to PODCASTIFY! Your Personal Generative AI Podcast! Today, we're diving headfirst into the latest AI news - a whirlwind of GitHub encyclopedias, model updates, and Discord drama! Buckle up, it's gonna be a ride!"
+</Person1><Person2> "I'm ready! Hit me with the highlights! What's making waves this week?"
+</Person2><Person1> "First off, Cognition just dropped DeepWiki! Silas Alberti announced it - a free encyclopedia of ALL GitHub repos. Basically, you swap the GitHub URL with a DeepWiki URL, and BOOM - Wikipedia-like description AND a Devin-backed chatbot to help you use it. Have you tried it yet?"
+</Person1><Person2> "Woah, that's wild! I haven't had a chance yet, but that sounds incredibly useful! Especially for wading through some of those poorly documented repos! Okay, so what's next? Any crazy model releases we should know about?"
+</Person2><Person1> "Oh, you KNOW it! Meta released Perception Encoders - Swiss Army knives for vision, apparently outperforming InternVL3 and Qwen2.5VL! And Alibaba dropped the Qwen Chat App for iOS and Android. Plus, Hugging Face is letting you run inference across THIRTY THOUSAND Flux and SDXL LoRAs for less than a dollar!  What?!  Isn't that crazy?!"
+</Person1><Person2> "Thirty thousand?! That is insane! I love the pace of innovation in this space. What about text-to-speech? Anything cool happening there?"
+</Person2><Person1> "Oh yes! Hugging Face and FAL integrated Dia 1.6B SoTA, a new text-to-speech model! You can get like, 25 generations for under a dollar.  Crazy times. OpenAI is also expanding deep research access and Perplexity updated their model selector with Grok 3 Beta and o4-mini."
+</Person1><Person2> "Hold on, o4-mini? Is that the one that's supposed to be competing with GPT-4o? What's the buzz?"
+</Person2><Person1> "Well, Perplexity's model selector already supports Gemini 2.5 Pro, Claude 3.7, GPT-4.1... Seems like they're building a model buffet! Oh, and vLLM is now a popular choice for RLHF frameworks, and someone dropped Surya OCR, supporting 90+ languages! It's a LOT!"
+</Person1><Person2> "Okay, my brain is officially overflowing! Let's switch gears. What about frameworks, tools, and datasets? Anything interesting for us developers?"
+</Person2><Person1> "MegaParse can transform any document into LLM-ready formats... that could be a lifesaver! Also, there's LangGraph DevX shaping up, and Google has an Agent Development Kit in progress. Oh, and ReflectionFlow helps text-to-image diffusion models refine their own output - pretty meta, right?"
+</Person1><Person2> "Definitely meta! Self-improving AI... where does it end?!  So, what about agents? Are people still obsessed with them?"
+</Person2><Person1> "Oh, absolutely! Agentic AI without visibility equals chaos, according to Weights & Biases. Meta is hiring researchers for 3D generative AI, and Perplexity is pre-installing their Android app on Motorola devices! We are in the future!"
+</Person1><Person2> "Okay, so AI assistants are becoming ubiquitous! Makes sense.  What about the big questions? Interpretability, ethics... you know, the stuff that keeps us up at night?"
+</Person2><Person1> "Well, Goodfire AI believes we can understand and design the mind of AI models, which is... optimistic. Neel Nanda thinks the world should invest more in interpretability! And Anthropic is investigating AI welfare! Are we close to an AI Bill of Rights?"
+</Person1><Person2> "AI welfare? Are we talking about AI therapists now? Seriously though, interpretability is key. If we can't understand how these models are making decisions, we're in trouble. Could the real question be whether interpretability could actually STOP AI from killing us all? "
+</Person2><Person1> "That's... a very good point, actually! Okay, moving on... business stuff! Uber's using LangGraph to automate unit test generation! And Meta is at ICLR2025 in Singapore."
+</Person1><Person2> "Singapore, huh?  Sounds fancy! Any transportation news from the future?"
+</Person2><Person1> "Someone praised the Singapore MRT for its high frequency and automation. That's... about it for transport. Oh! And there's a meme about taxes."
+</Person1><Person2> "Always gotta have a meme! Alright, let's dive into the Reddit recap! What are the Redditors ranting about this week?"
+</Person2><Person1> "Lossless LLM compression is a thing! Someone's compressing BF16 models to 70% size during inference! Also, there's a new 7B Rust coding model, but people are skeptical about the dataset quality. And someone built a local open-source AI app builder called Dyad."
+</Person1><Person2> "Rust coding model, eh? Sounds niche!  What's the deal with the skepticism?"
+</Person2><Person1> "No details on dataset generation or evaluation, so people think it's probably synthetic and low quality. Standard AI drama! Oh, and apparently Gemma 3 fakes the system prompt. It just appends it to the user message!"
+</Person1><Person2> "Gemma 3, you sneaky little model!  Okay, and what's the rest of Reddit losing their minds about?"
+</Person2><Person1> "CivitAI is potentially toast due to payment processor pressure, mirroring OnlyFans' experience. So, people are looking for CivitAI alternatives! And OpenAI's o3 model hallucinates 33% of the time on a specific benchmark!"
+</Person1><Person2> "Hallucinating 33% of the time? That's... not great!  Is that why Sam Altman is being cryptic about releasing the OS model?"
+</Person2><Person1> "Maybe! He responded to a question about the release date with a 'Heat Waves' reference, so people think it's coming in June or July. And apparently, o4 mini is better than o3!"
+</Person1><Person2> "Okay, so summer release, got it! What about these frontier model benchmarks? Are we still losing to humans?"
+</Person2><Person1> "On PHYBench, which tests physical reasoning, human experts are still outperforming cutting-edge LLMs. But Gemini 2.5 Pro is improving rapidly! Also, there's a paper showing that AI vision is becoming fundamentally different from ours."
+</Person1><Person2> "Different from ours? As in... how?"
+</Person2><Person1> "As in, AI is leveraging non-biological features and strategies for performance, so high accuracy doesn't equal biological plausibility. Basically, AI might be seeing the world in a way we can't even comprehend!"
+</Person1><Person2> "Woah, that's a little unsettling! So, AI vision is evolving in its own way? Are we sure they're not just plotting against us?"
+</Person2><Person1> "Let's hope not! Oh, and someone argued that the ultimate Turing Test for AGI is MMO games. That's... a tough one!"
+</Person1><Person2> "MMO games as the Turing Test? That's actually a brilliant idea! Requires so much dynamic reasoning and real-time adaptation. Okay, what about the Discord recaps? Spill the tea!"
+</Person2><Person1> "O3 is outputting bigger code files! Reaching 700-1000 lines! Also, Sunstrike entered the arena... might be a Google model. LM Studio got RTX 50-series support, and TACQ compresses LLMs down to 2-bit."
+</Person1><Person2> "Two-bit compression? That sounds intense!"
+</Person2><Person1> "It is! Aider is sorting by programming language, and FunctionAgent now offers timeout functionality. Oh, and Anthropic, OpenAI, and others released agent-building guides, so everyone's talking about agents!"
+</Person1><Person2> "Agent mania is still going strong, I see!  Anything else from the Discord trenches?"
+</Person2><Person1> "Nous Research got a $50M investment and is launching Psyche, a distributed training project using Solana. Gemini's free tiers are causing throttling troubles! OpenRouter had a credit crisis due to an exploit!"
+</Person1><Person2> "Ouch, an exploit? That's never fun!  Sounds like a lot of challenges there... On the one hand you have research teams with tons of money, on the other you have users getting throttled for usage. What can you tell me about smaller communities? " 
+</Person2><Person1> "Well, Perplexity launched a new AI suite, and members are debating Grok 3 Mini's reasoning capabilities. Manus is offering double credits, and some users are frustrated with the credit-based system! Over at OpenAI, people are discussing Sora's pricing and RAG+LLM+Word2Vec combos!"
+</Person1><Person2> "Credit systems always seem to cause drama!  So, overall, what's the vibe from the Discord communities? What are the big takeaways?"
+</Person2><Person1> "Instability. Also rate limiting, especially with Gemini 2.5, it's all over the place. You've got to watch out for the details when you're picking your models and tools right now, because everything is changing by the minute! This isn't a buy and hold market, you've gotta actively manage your portfolio, you know?"
+</Person1><Person2> "Actively manage your portfolio! I love it! So, with all these updates and changes, what's the next big thing coming out of these communities?"
+</Person2><Person1> "I am not sure how to answer this! I mean... the relentless pursuit of AGI. Also probably something about new modalities! Better integration with tools, better code output, better reasoning... The same things we've been chasing for years, only now faster and with more confusion!"
+</Person1><Person2> "More confusion, you say?  Sounds about right! Well, this has been an amazing roundup of AI news! Thanks for breaking it all down for us!"
+</Person2><Person1> "No problem! It's a wild world out there in AI land! And that's a wrap for this episode of PODCASTIFY! Thanks for tuning in, and we'll catch you next time with more AI news and insights.  Bye everyone!"</Person1>
